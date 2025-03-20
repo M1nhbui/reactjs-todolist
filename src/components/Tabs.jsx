@@ -1,6 +1,8 @@
 import React from 'react'
 
 export function Tabs() {
+    const { todos } = props
+
     const tabs = [
         'All', 'Open', 'Completed'
     ]
