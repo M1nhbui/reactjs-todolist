@@ -17,8 +17,9 @@ function App() {
         { input: 'Hello! Add your first todo!', complete: true }
     ])
 
-    function handleAddTodo() {
-
+    function handleAddTodo(newTodo) {
+        const newTodoList = [...todos, { input: newTodo, complete: false }]
+        setTodos(newTodoList)
     }
 
     function handleEditTodo() {
@@ -28,13 +29,13 @@ function App() {
     function handleDeleteTodo() {
 
     }
-    
+
     return (
         <>
             <Header todos={todos} />
             <Tabs todos={todos} />
             <TodoList todos={todos} />
-            <TodoInput />
+            <TodoInput handleAddTodo={handleAddTodo} />
         </>
     )
 }
