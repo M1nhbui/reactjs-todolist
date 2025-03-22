@@ -1,3 +1,3 @@
 # reactjs-todolist
- 
-Deploy: todo-app-by-minh-bui.netlify.app
+
+https://todo-app-by-minh-bui.netlify.app/
