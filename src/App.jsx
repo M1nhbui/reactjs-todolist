@@ -50,6 +50,7 @@ function App() {
     useEffect(() => {
         if (!localStorage || !localStorage.getItem('todo-app')) { return }
         let db = []
+        console.log('here')
         if (localStorage.getItem('todo-app')) {
             db = JSON.parse(localStorage.getItem('todo-app'))
         }
